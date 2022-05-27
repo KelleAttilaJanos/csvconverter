@@ -1,0 +1,23 @@
+﻿<Window x:Class="csvconverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:csvconverter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Click="fileload" Name="filesearch" Content="Search file" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Height="50" Width="200"/>
+        <TextBox Margin="200,0,100,0" TextWrapping="Wrap" Name="ConnectionString" Text="ConnectionString" VerticalAlignment="Top" Height="50"/>
+        <Button Click="Push" Content="Push" Name="commitbutton" HorizontalAlignment="Right" VerticalAlignment="Top" Height="50" Width="100"/>
+
+        <DataGrid   Name="data" Margin="0,50,0,0">
+            <DataGrid.ContextMenu >
+                <ContextMenu >
+                    <!--<MenuItem  Header="row delete" Click="rdelete"/>-->
+                    <MenuItem  Header="column delete" Click="cdelete" />
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+    </Grid>
+</Window>

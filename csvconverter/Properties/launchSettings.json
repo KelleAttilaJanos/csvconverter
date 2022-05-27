@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "csvconverter": {
+      "commandName": "Project",
+      "sqlDebugging": true,
+      "hotReloadEnabled": false
+    }
+  }
+}
